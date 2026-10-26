@@ -1,0 +1,82 @@
+﻿
+   PASS  Tests\Unit\ExampleTest
+  Γ£ô that true is true
+
+   PASS  Tests\Feature\AuthTest
+  Γ£ô guest cannot open dashboard                                           0.54s  
+  Γ£ô guest cannot open protected pages                                     0.03s  
+  Γ£ô login page is accessible                                              0.04s  
+  Γ£ô wrong password is rejected                                            0.29s  
+  Γ£ô correct credentials can login and open dashboard                      0.04s  
+  Γ£ô user can logout                                                       0.04s  
+  Γ£ô password is stored hashed                                             0.02s  
+
+   PASS  Tests\Feature\AuthorizationTest
+  Γ£ô staff cannot open admin pages by direct url                           0.05s  
+  Γ£ô staff cannot modify master data via post                              0.04s  
+  Γ£ô staff can view products and create transactions pages                 0.05s  
+  Γ£ô admin can open admin pages                                            0.05s  
+  Γ£ô staff cannot cancel transactions                                      0.05s  
+  Γ£ô staff cannot view other staff transactions but admin can              0.05s  
+  Γ£ô staff sales list only contains their own sales                        0.06s  
+  Γ£ô admin cannot delete own account or demote self                        0.03s  
+
+   PASS  Tests\Feature\ChecklistTest
+  Γ£ô migrations create all required tables and columns                     0.03s  
+  Γ£ô pages have navigation and success message                             0.04s  
+  Γ£ô validation error message is shown in form page                        0.04s  
+  Γ£ô product list does not run n plus one queries                          0.05s  
+  Γ£ô sales list does not run n plus one queries                            0.05s  
+  Γ£ô forms contain csrf token                                              0.03s  
+  Γ£ô output is escaped against xss                                         0.03s  
+  Γ£ô mass assignment protection ignores non fillable columns               0.02s  
+  Γ£ô env is gitignored and example has no secrets                          0.02s  
+  Γ£ô custom error pages are used                                           0.03s  
+
+   PASS  Tests\Feature\ProductTest
+  Γ£ô admin can create product                                              0.03s  
+  Γ£ô duplicate sku is rejected                                             0.03s  
+  Γ£ô database constraint also protects unique sku                          0.02s  
+  Γ£ô negative price is rejected                                            0.03s  
+  Γ£ô non existing category is rejected                                     0.03s  
+  Γ£ô stock cannot be changed from edit form                                0.03s  
+  Γ£ô unused product is soft deleted                                        0.03s  
+  Γ£ô product used in transaction cannot be deleted                         0.03s  
+
+   PASS  Tests\Feature\PurchaseTest
+  Γ£ô successful purchase increases stock                                   0.04s  
+  Γ£ô purchase with multiple items sums total on server                     0.07s  
+  Γ£ô zero quantity and negative cost are rejected                          0.03s  
+  Γ£ô supplier is required                                                  0.03s  
+  Γ£ô admin can cancel purchase and stock is reverted                       0.03s  
+  Γ£ô purchase cannot be cancelled when stock was already sold              0.04s  
+
+   PASS  Tests\Feature\RelationshipTest
+  Γ£ô category has many products and product belongs to category            0.03s  
+  Γ£ô sale and purchase relationships                                       0.03s  
+  Γ£ô seeders run and create consistent demo data                           0.07s  
+
+   PASS  Tests\Feature\SaleTest
+  Γ£ô successful sale reduces stock                                         0.03s  
+  Γ£ô total and price are calculated by server not browser                  0.03s  
+  Γ£ô multiple items in one sale                                            0.03s  
+  Γ£ô sale with insufficient stock is rejected without any change           0.03s  
+  Γ£ô duplicate lines of same product are merged before stock check         0.03s  
+  Γ£ô atomicity if one item fails whole transaction is rolled back          0.03s  
+  Γ£ô zero and negative quantity are rejected                               0.03s  
+  Γ£ô sale without items is rejected                                        0.02s  
+  Γ£ô admin can cancel sale and stock is restored                           0.04s  
+
+   PASS  Tests\Feature\SearchPaginationTest
+  Γ£ô product list is paginated                                             0.06s  
+  Γ£ô search by sku and name                                                0.05s  
+  Γ£ô filter by category                                                    0.04s  
+  Γ£ô low stock filter and page                                             0.05s  
+  Γ£ô filter is kept in pagination links                                    0.04s  
+  Γ£ô invalid filter input is rejected                                      0.03s  
+  Γ£ô sales filter by status and date                                       0.05s  
+  Γ£ô dashboard numbers come from database                                  0.03s  
+
+  Tests:    60 passed (241 assertions)
+  Duration: 3.59s
+

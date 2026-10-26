@@ -1,0 +1,52 @@
+<?php
+
+return [
+    'accepted' => ':attribute harus diterima.',
+    'after_or_equal' => ':attribute harus berupa tanggal setelah atau sama dengan :date.',
+    'array' => ':attribute harus berupa array.',
+    'boolean' => ':attribute harus bernilai benar atau salah.',
+    'confirmed' => 'Konfirmasi :attribute tidak cocok.',
+    'date' => ':attribute bukan tanggal yang valid.',
+    'email' => ':attribute harus berupa alamat email yang valid.',
+    'exists' => ':attribute yang dipilih tidak valid.',
+    'in' => ':attribute yang dipilih tidak valid.',
+    'integer' => ':attribute harus berupa bilangan bulat.',
+    'max' => [
+        'array' => ':attribute tidak boleh lebih dari :max item.',
+        'file' => ':attribute tidak boleh lebih dari :max kilobyte.',
+        'numeric' => ':attribute tidak boleh lebih dari :max.',
+        'string' => ':attribute tidak boleh lebih dari :max karakter.',
+    ],
+    'min' => [
+        'array' => ':attribute minimal harus memiliki :min item.',
+        'file' => ':attribute minimal :min kilobyte.',
+        'numeric' => ':attribute minimal bernilai :min.',
+        'string' => ':attribute minimal :min karakter.',
+    ],
+    'numeric' => ':attribute harus berupa angka.',
+    'regex' => 'Format :attribute tidak valid.',
+    'required' => ':attribute wajib diisi.',
+    'string' => ':attribute harus berupa teks.',
+    'unique' => ':attribute sudah digunakan.',
+
+    'custom' => [],
+
+    'attributes' => [
+        'sku' => 'SKU',
+        'name' => 'nama',
+        'email' => 'email',
+        'password' => 'password',
+        'role' => 'role',
+        'phone' => 'telepon',
+        'category_id' => 'kategori',
+        'purchase_price' => 'harga beli',
+        'selling_price' => 'harga jual',
+        'stock' => 'stok',
+        'minimum_stock' => 'stok minimum',
+        'supplier_id' => 'pemasok',
+        'date_from' => 'tanggal awal',
+        'date_to' => 'tanggal akhir',
+        'status' => 'status',
+        'q' => 'kata kunci',
+    ],
+];
