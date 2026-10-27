@@ -179,6 +179,5 @@ Letakkan tangkapan layar di `docs/screenshots/` (daftar halaman yang perlu diamb
 
 - **Framework/library:** Laravel (dokumentasi resmi laravel.com/docs), Bootstrap 5 (CDN).
 - **Pola yang dipakai:** `DB::transaction` dan `lockForUpdate()` mengikuti contoh materi kuliah (slide "Contoh logika
-  penjualan") dan dokumentasi Laravel (*Database: Transactions*, *Queries: Pessimistic Locking*).j
-
+  penjualan") dan dokumentasi Laravel (*Database: Transactions*, *Queries: Pessimistic Locking*).
 
